@@ -26,7 +26,7 @@ public class WebViewPageHandlerMapping {
         String realUrl = url.substring(0, url.contains("?") ? url.indexOf("?") : url.length());
         for (WebViewPageHandler webViewPageHandler : webViewPageHandlers) {
             if (webViewPageHandler.supports(realUrl, url)) {
-                Log.i(Constants.TAG,"handle webview page:" + webViewPageHandler);
+                Log.i(Constants.TAG, "handle webview page:" + webViewPageHandler);
                 webViewPageHandler.handle(rootView, webView);
                 return;
             }
