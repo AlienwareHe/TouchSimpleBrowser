@@ -17,4 +17,7 @@ com.alien.touch.browser.InjectedChromeClient.onProgressChanged
 # JS Bridge
 com.alien.touch.browser.JsInterface
 
+# Ajax Hook
+app/src/main/assets/my.js:tryParseJson
+
 通过JS注入 hook ajax和JS Bridge实现对方JS层数据拦截并回传至Java层。

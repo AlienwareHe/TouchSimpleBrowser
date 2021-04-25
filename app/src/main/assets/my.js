@@ -63,14 +63,14 @@ function hookAjax(proxy) {
 
 hookAjax({
     responseText: {
-        getter: tryParseJson2
+        getter: tryParseJson
     },
     response: {
-        getter: tryParseJson2
+        getter: tryParseJson
     }
 });
 
 
-function tryParseJson2(v, xhr) {
+function tryParseJson(v, xhr) {
     console.log("====="+v);
 };
